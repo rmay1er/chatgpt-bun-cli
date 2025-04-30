@@ -1,0 +1,20 @@
+{
+  "name": "gpt-cli",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun index.ts",
+    "compile": "bun build ./index.ts --compile --outfile ./dist/mycli"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.4.1",
+    "ai-responder": "^1.1.0",
+    "ora": "^8.2.0"
+  }
+}
